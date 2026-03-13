@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politica de Privacidade - PesquisaPlanilha</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; line-height: 1.7; color: #1a1a1a; background: #f9f9f7; }
+    header { background: #111318; padding: 2rem 0; text-align: center; }
+    header h1 { font-size: 1.6rem; font-weight: 600; color: #fff; }
+    header h1 span { color: #00D4AA; }
+    header p { color: #6b7494; font-size: 0.9rem; margin-top: 0.4rem; }
+    main { max-width: 720px; margin: 3rem auto; padding: 0 1.5rem; }
+    section { margin-bottom: 2.5rem; }
+    h2 { font-size: 1.1rem; font-weight: 600; color: #111318; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid #e5e5e0; }
+    p { margin-bottom: 0.75rem; color: #333; }
+    ul { margin: 0.5rem 0 0.75rem 1.5rem; }
+    li { margin-bottom: 0.4rem; color: #333; }
+    .badge { display: inline-block; background: #e1f5ee; color: #0f6e56; font-size: 0.8rem; font-weight: 500; padding: 0.2rem 0.7rem; border-radius: 99px; margin-bottom: 1rem; }
+    .highlight { background: #f0fdf8; border-left: 3px solid #00D4AA; border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1rem 0; }
+    footer { text-align: center; padding: 2rem; color: #888; font-size: 0.85rem; border-top: 1px solid #e5e5e0; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Pesquisa<span>Planilha</span></h1>
+  <p>Extensao para Google Chrome - Politica de Privacidade</p>
+</header>
+<main>
+  <section>
+    <span class="badge">Ultima atualizacao: marco de 2026</span>
+    <div class="highlight"><strong>Resumo:</strong> A extensao PesquisaPlanilha nao coleta, armazena nem transmite nenhum dado pessoal para servidores externos. Todo o processamento ocorre localmente no seu navegador.</div>
+  </section>
+  <section>
+    <h2>1. O que a extensao faz</h2>
+    <p>O PesquisaPlanilha e uma extensao para Google Chrome que permite pesquisar termos em planilhas Excel abertas no Microsoft OneDrive ou SharePoint Online, diretamente pelo navegador. Retorna resultados com numero do processo, data e assunto.</p>
+  </section>
+  <section>
+    <h2>2. Dados acessados</h2>
+    <p>Para funcionar, a extensao acessa:</p>
+    <ul>
+      <li><strong>Conteudo das celulas da planilha</strong> - lido via DOM da aba do Excel Online aberta pelo usuario, exclusivamente na sessao ativa.</li>
+      <li><strong>URLs das abas abertas no Chrome</strong> - usadas apenas para identificar quais abas contem uma planilha do OneDrive ou SharePoint.</li>
+    </ul>
+    <p>Nenhum outro dado e acessado.</p>
+  </section>
+  <section>
+    <h2>3. Armazenamento local</h2>
+    <p>Os dados lidos da planilha sao armazenados temporariamente no <strong>armazenamento local do Chrome</strong> (chrome.storage.local), exclusivamente no dispositivo do usuario. Esses dados <strong>nunca saem do dispositivo</strong> e podem ser apagados a qualquer momento desinstalando a extensao.</p>
+  </section>
+  <section>
+    <h2>4. O que NAO fazemos</h2>
+    <ul>
+      <li>Nao transmitimos nenhum dado para servidores externos.</li>
+      <li>Nao coletamos dados pessoais, de identificacao ou de uso.</li>
+      <li>Nao usamos cookies, rastreadores ou ferramentas de analytics.</li>
+      <li>Nao compartilhamos dados com terceiros.</li>
+      <li>Nao exibimos anuncios.</li>
+      <li>Nao requeremos login ou conta de qualquer servico.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>5. Permissoes utilizadas</h2>
+    <ul>
+      <li><strong>tabs</strong> - identificar abas abertas com Excel Online/OneDrive.</li>
+      <li><strong>scripting</strong> - injetar script de leitura na aba selecionada para extrair o conteudo das celulas.</li>
+      <li><strong>storage</strong> - salvar os dados da planilha no armazenamento local do Chrome entre sessoes.</li>
+      <li><strong>host permissions</strong> (*.sharepoint.com, onedrive.live.com, *.office.com) - necessarias para executar o script nas paginas do Excel Online.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>6. Seguranca</h2>
+    <p>Todo o processamento ocorre localmente no dispositivo do usuario. A extensao nao possui servidor proprio e nao estabelece conexoes de rede alem das realizadas pelo proprio Chrome ao carregar as paginas do OneDrive.</p>
+  </section>
+  <section>
+    <h2>7. Alteracoes nesta politica</h2>
+    <p>Caso esta politica seja atualizada, a nova versao sera publicada nesta pagina com a data de atualizacao revisada.</p>
+  </section>
+  <section>
+    <h2>8. Contato</h2>
+    <p>Duvidas podem ser enviadas atraves da pagina da extensao na Chrome Web Store, usando o link de suporte disponivel na listagem.</p>
+  </section>
+</main>
+<footer>PesquisaPlanilha - Extensao para Google Chrome - Politica de Privacidade</footer>
+</body>
+</html>
